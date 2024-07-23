@@ -6,4 +6,28 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="ILT.Core.Data,Services\**" />
+    <Compile Remove="ILT.Core.Data.Contracts\**" />
+    <Compile Remove="ILT.Core.Data.Entities\**" />
+    <Compile Remove="ILT.Core.Data\**" />
+    <Content Remove="ILT.Core.Data,Services\**" />
+    <Content Remove="ILT.Core.Data.Contracts\**" />
+    <Content Remove="ILT.Core.Data.Entities\**" />
+    <Content Remove="ILT.Core.Data\**" />
+    <EmbeddedResource Remove="ILT.Core.Data,Services\**" />
+    <EmbeddedResource Remove="ILT.Core.Data.Contracts\**" />
+    <EmbeddedResource Remove="ILT.Core.Data.Entities\**" />
+    <EmbeddedResource Remove="ILT.Core.Data\**" />
+    <None Remove="ILT.Core.Data,Services\**" />
+    <None Remove="ILT.Core.Data.Contracts\**" />
+    <None Remove="ILT.Core.Data.Entities\**" />
+    <None Remove="ILT.Core.Data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="ILT.Core.Data.Contracts\ILT.Core.Data.Contracts.csproj" />
+    <ProjectReference Include="ILT.Core.Data.Entities\ILT.Core.Data.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

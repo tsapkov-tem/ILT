@@ -1,6 +1,17 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+using ILT.Core.Data;
 
-app.MapGet("/", () => "Hello World!");
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
 
-app.Run();
+        builder.Services.AddDatabase(builder.Configuration);
+
+        var app = builder.Build();
+
+        app.MapGet("/", () => "Hello World!");
+
+        app.Run();
+    }
+}

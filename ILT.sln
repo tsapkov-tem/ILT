@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ILT.Core.Data.Entities", "I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ILT.Core.Data.Contracts", "ILT.Core.Data.Contracts\ILT.Core.Data.Contracts.csproj", "{79939769-7496-4BA5-8FA5-6C2F94302D05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILT.Core.Data.Services", "ILT.Core.Data,Services\ILT.Core.Data.Services.csproj", "{A19C5C11-C1DC-4F7F-9B34-899FB0EFEA6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ILT.Core.Data.Services", "ILT.Core.Data,Services\ILT.Core.Data.Services.csproj", "{A19C5C11-C1DC-4F7F-9B34-899FB0EFEA6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILT.Core.Data", "ILT.Core.Data\ILT.Core.Data.csproj", "{4B7AC351-CF50-450A-A501-627771AE566F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ILT.Core.Data", "ILT.Core.Data\ILT.Core.Data.csproj", "{4B7AC351-CF50-450A-A501-627771AE566F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILT.Core.Data.Repository", "..\ILT.Core.Data.Repository\ILT.Core.Data.Repository.csproj", "{8F502FC6-DCEC-4027-BF99-DA1A3E74701A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4B7AC351-CF50-450A-A501-627771AE566F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B7AC351-CF50-450A-A501-627771AE566F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B7AC351-CF50-450A-A501-627771AE566F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F502FC6-DCEC-4027-BF99-DA1A3E74701A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F502FC6-DCEC-4027-BF99-DA1A3E74701A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F502FC6-DCEC-4027-BF99-DA1A3E74701A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F502FC6-DCEC-4027-BF99-DA1A3E74701A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

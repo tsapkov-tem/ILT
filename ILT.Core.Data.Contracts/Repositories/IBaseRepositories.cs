@@ -2,11 +2,12 @@
 
 namespace ILT.Core.Data.Contracts.Repositories
 {
-    internal interface IBaseRepositories<T> where T : IEntity
+    public interface IBaseRepositories<T> where T : IEntity
     {
-        T? GetById(string id);
-        int Create(T entity);
-        int Update(T entity);
-        int Delete(T entity);
+        public T? GetById(string id);
+        public T? GetByIdWithIncludedEntities(string id);
+        public int Create(T entity);
+        public int Update(T entity);
+        public int Delete(T entity);
     }
 }

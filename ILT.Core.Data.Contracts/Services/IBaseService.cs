@@ -5,6 +5,7 @@ namespace ILT.Core.Data.Contracts.Services
     public interface IBaseService<T> where T : IEntity
     {
         public T Get(string id);
+        public T? GetByIdWithIncludedEntities(Guid id);
         public T Create(T entity);
         public T Update(T entity);
         public T Delete(string id);

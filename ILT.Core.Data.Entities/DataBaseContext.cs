@@ -1,12 +1,16 @@
 ﻿using ILT.Core.Data.Entities.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 namespace ILT.Core.Data.Entities
 {
-    public class DatabaseContext(DbContextOptions options) : DbContext(options)
+    public class DatabaseContext : DbContext
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Group> Groups { get; set; }
+
+        public DatabaseContext(DbContextOptions options) : base(options){}
+        public DatabaseContext(){}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -23,5 +27,7 @@ namespace ILT.Core.Data.Entities
                     .HasForeignKey(fellow => fellow.GroupId)
                     );
         }
+
+        
     }
 }

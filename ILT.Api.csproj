@@ -26,6 +26,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="ILT.Core.Data,Services\ILT.Core.Data.Services.csproj" />
     <ProjectReference Include="ILT.Core.Data.Entities\ILT.Core.Data.Entities.csproj" />
     <ProjectReference Include="ILT.Core.Data\ILT.Core.Data.csproj" />
   </ItemGroup>

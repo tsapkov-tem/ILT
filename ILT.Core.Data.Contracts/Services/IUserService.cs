@@ -2,7 +2,7 @@
 
 namespace ILT.Core.Data.Contracts.Services
 {
-    internal interface IUserService : IBaseService<User>
+    public interface IUserService : IBaseService<User>
     {
     }
 }

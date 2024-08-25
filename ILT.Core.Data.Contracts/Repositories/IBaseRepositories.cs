@@ -8,6 +8,6 @@ namespace ILT.Core.Data.Contracts.Repositories
         public T? GetByIdWithIncludedEntities(string id);
         public int Create(T entity);
         public int Update(T entity);
-        public int Delete(T entity);
+        public int Delete(string id);
     }
 }

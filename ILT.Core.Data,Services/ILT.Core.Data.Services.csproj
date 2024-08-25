@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\ILT.Core.Data.Repository\ILT.Core.Data.Repository.csproj" />
+    <ProjectReference Include="..\ILT.Core.Data.Contracts\ILT.Core.Data.Contracts.csproj" />
+  </ItemGroup>
+
 </Project>
